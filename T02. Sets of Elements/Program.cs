@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 HashSet<int> firstSet = new HashSet<int>();
 HashSet<int> secondSet = new HashSet<int>();
@@ -21,5 +20,9 @@ for (int m = 0; m < secondNumber; m++)
 }
 
 firstSet.IntersectWith(secondSet);
+//firstSet.ExceptWith(secondSet);
+//firstSet.UnionWith(secondSet);
+//firstSet.SymmetricExceptWith(secondSet);
+
 
 Console.WriteLine(string.Join(" ", firstSet));
