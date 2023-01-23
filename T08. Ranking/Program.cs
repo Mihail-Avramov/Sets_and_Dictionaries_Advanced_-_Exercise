@@ -49,6 +49,7 @@ while ((input = Console.ReadLine()) != "end of submissions")
 
 string bestUser = users.MaxBy(u => u.Value.Values.Sum()).Key;
 int bestUserPoints = users[bestUser].Values.Sum();
+//int bestUserPoints = users.MaxBy(u => u.Value.Values.Sum()).Value.Values.Sum();
 
 Console.WriteLine($"Best candidate is {bestUser} with total {bestUserPoints} points.");
 Console.WriteLine("Ranking:");
